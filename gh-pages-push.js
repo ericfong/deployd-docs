@@ -8,5 +8,5 @@ var options = {
 }
 
 ghpages.publish(Path.join(__dirname, '_site'), options, function(err) {
-    console.error(err);
+    console.error(err || 'Pushed');
 });

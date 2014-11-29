@@ -70,6 +70,7 @@ index.crawl('docs', function (cache) {
     });
     // copy index.html
     fs.copySync( 'views-staticGen/index.html', Path.join( OutDir, 'index.html' ) );
+    fs.copySync( 'public/CNAME', Path.join( OutDir, 'CNAME' ) );
 
 
     // walk start from docs/index.md
